@@ -19,8 +19,7 @@ Basically, the tuples for time are just a way of ordering the values for any giv
 Q.2- Write a program to get formatted time.
 import datetime
 x = datetime.datetime.now()
-print (x)
-
+print(x.strftime("%H:%M:%S"))
 --------------------------------------------------------------------------------------------------------------------------------
 
 Q.3- Extract month from the time.

@@ -31,16 +31,18 @@ import pandas as pd
 import numpy as np
 
 df = pd.read_csv("/Users/ayush/Desktop/data.csv")
-#a
+
 print("First 5 rows of Data are:",df.head())
-#b
+
 print("First 10 rows of Data are:",df.head(10))
-#c
 
-#d
-print("Last five rows are:",df.tail())
-#e
+print(df.describe())
 
+print("last five rows\n",df.tail(5))
+
+print("statistics on MaxTemp\n",df.MaxTemp.describe())
+
+print("statistic on 2nd column\n",df.Location.describe())
 
 ###############################################################################
 
